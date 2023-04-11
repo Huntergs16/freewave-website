@@ -11,7 +11,7 @@ export default function Header() {
             </div>
             <div className="w-full h-4/5 bg-top">
                 <div className="relative">
-                    <img src="/FW_header.png" alt="Photoshoot" useMap="#image-map" className="h-full pointer-events-none" />
+                    <img src="/FW_header.png" alt="Photoshoot" useMap="#image-map" className="w-full h-full pointer-events-none" />
                     <map name="image-map">
                         <area className="absolute top-[8%] left-[50%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
                         <area className="absolute top-[13%] left-[36%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
