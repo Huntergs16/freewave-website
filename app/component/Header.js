@@ -20,10 +20,10 @@ export default function Header() {
                         useMap="#image-map" 
                         />
                     <map name="image-map">
-                        <area className="absolute top-[8%] left-[50%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
-                        <area className="absolute top-[13%] left-[36%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
-                        <area className="absolute top-[45%] left-[22%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
-                        <area className="absolute top-[46%] left-[62%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
+                        <area className="absolute top-[8%] left-[50%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 cursor-pointer bg-white opacity-0 rounded-lg" href="https://www.example.com" alt="Matt's Link" />
+                        <area className="absolute top-[13%] left-[36%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 cursor-pointer bg-white opacity-0 rounded-lg" href="https://www.example.com" alt="Matt's Link" />
+                        <area className="absolute top-[45%] left-[22%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 cursor-pointer bg-white opacity-0 rounded-lg" href="https://www.example.com" alt="Matt's Link" />
+                        <area className="absolute top-[46%] left-[62%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 cursor-pointer bg-white opacity-0 rounded-lg" href="https://www.example.com" alt="Matt's Link" />
                     </map>
                 </div>
             </div>
