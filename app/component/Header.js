@@ -6,7 +6,7 @@ export default function Header() {
             <div className="flex h-[10vh] justify-center">
                 {/* <img src="/fwa1_nobg.png" alt="FWA logo" className="object-cover pointer-events-none"/> */}
                 <div className="relative w-20">
-                    <Image fill src={"/fwa1_nobg.png"} className=""/>
+                    <Image fill src={"/fwa1_nobg.png"} className="" alt="Freewave Logo"/>
                 </div>
             </div>
             <div className="w-full h-4/5 bg-top">
