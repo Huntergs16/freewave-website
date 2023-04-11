@@ -9,9 +9,16 @@ export default function Header() {
                     <Image fill src={"/fwa1_nobg.png"} className="" alt="Freewave Logo"/>
                 </div>
             </div>
-            <div className="w-full h-4/5 bg-top">
-                <div className="relative">
-                    <img src="/FW_header.png" alt="Photoshoot" useMap="#image-map" className="w-full h-full pointer-events-none" />
+            <div className="w-full h-min">
+                <div className="relative w-screen h-full">
+                    <Image 
+                        src="/FW_header.png"
+                        alt="Photoshoot"
+                        width={1200} // adjust the width of the image to fit your screen
+                        height={800} // adjust the height of the image to fit your screen
+                        className="w-full h-full object-cover object-center pointer-events-none" 
+                        useMap="#image-map" 
+                        />
                     <map name="image-map">
                         <area className="absolute top-[8%] left-[50%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
                         <area className="absolute top-[13%] left-[36%] w-[13%] h-[17%] hover:opacity-50 cursor-pointer bg-white opacity-0" href="https://www.example.com" alt="Matt's Link" />
