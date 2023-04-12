@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Header() {
     return (
         <div className="w-full h-min pb-2">
-            <div className="flex h-[10vh] justify-center">
+            <div className="flex h-[10vh] min-h-[60px] justify-center">
                 {/* <img src="/fwa1_nobg.png" alt="FWA logo" className="object-cover pointer-events-none"/> */}
                 <div className="relative w-20">
                     <Image fill src={"/fwa1_nobg.png"} className="" alt="Freewave Logo"/>
