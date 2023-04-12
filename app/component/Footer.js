@@ -1,9 +1,18 @@
+import Image from "next/image"
 
 export default function Footer() {
     return (
-        <div className="flex flex-col items-center h-24 py-2 w-screen">
+        <div className="flex flex-col justify-center items-center h-36 py-2 w-screen">
+            <div className="flex items-center justify-center gap-6 p-2">
+                <a target="_blank" href="https://twitter.com/freewavemvmt?s=11&t=i_T5MVoFls0Dqyr4XCo0LQ">
+                    <Image src={"/twitter.png"} width={25} height={25}/>
+                </a>
+                <a target="_blank" href="https://instagram.com/freewaveathletics?igshid=YmMyMTA2M2Y=">
+                    <Image src={"/instagram-icon.png"} width={25} height={25}/>
+                </a>
+            </div>
             <hr className="h-[1px] mb-1 w-full border-black border-[1px]" />
-            <h4 className="font-mono"> Freewave Athletics©</h4>
+            <p className="font-mono text-base text-center"> ©2023 Freewave</p>
         </div>
     )
 }
