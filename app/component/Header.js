@@ -6,12 +6,13 @@ export default function Header() {
             <div className="flex h-[10vh] min-h-[60px] justify-center">
                 {/* <img src="/fwa1_nobg.png" alt="FWA logo" className="object-cover pointer-events-none"/> */}
                 <div className="relative w-20">
-                    <Image fill src={"/fwa1_nobg.png"} className="" alt="Freewave Logo"/>
+                    <Image quality={25} fill src={"/fwa1_nobg.png"} className="" alt="Freewave Logo"/>
                 </div>
             </div>
             <div className="w-full h-min">
                 <div className="relative w-screen h-full">
                     <Image 
+                        quality={100}
                         src="/FW_header.png"
                         alt="Photoshoot"
                         width={1200} // adjust the width of the image to fit your screen
