@@ -1,26 +1,29 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Header from './component/Header'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-3">
-      <div className="w-full h-min md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 md:grid-rows-auto lg:grid-rows-auto gap-2 sm:flex sm:overflow-x-scroll">
-        <div className="rounded-lg border-2 overflow-hidden h-min" >
-          <Image src="/FWPROMO.png" className="object-cover h-full w-full" alt="promo pic" width={1000} height={1000} />
-        </div>
-        <div className="rounded-lg border-2 overflow-hidden h-min">
-          <Image src="/brino7.png" className="object-cover h-full w-full" alt="brino pic" width={1000} height={1000} />
-        </div>
-        <div className="rounded-lg border-2 overflow-hidden h-min" >
-          <Image src="/nickback.png" className="object-cover h-full w-full" alt="nick pic" width={1000} height={1000} />
-        </div>
-        <div className="rounded-lg border-2 overflow-hidden h-min">
-          <Image src="/jazmin_britt.png" className="object-cover h-full w-full" alt="jaz&britt pic" width={1000} height={1000} />
-        </div>
-        <div className="rounded-lg border-2 overflow-hidden h-min" >         
-         <Image src="/matt_jaymo.png" className="object-cover h-full w-full" alt="matt&mo pic" width={1000} height={1000} />
+    <>
+      <Header />
+      <div className="flex min-h-screen flex-col items-center justify-between p-3 sm:p-6">
+        <div className="w-full h-min sm:grid sm:grid-cols-2 sm:grid-rows-auto gap-2 sm:gap-6 flex-col flex overflow-x-auto">
+          <div className="rounded-lg border-2 overflow-hidden h-min" >
+            <Image src="/FWPROMO.png" className="object-cover" alt="promo pic" width={1000} height={1000} />
+          </div>
+          <div className="rounded-lg border-2 overflow-hidden h-min">
+            <Image src="/brino7.png" className="object-cover" alt="brino pic" width={1000} height={1000} />
+          </div>
+          <div className="rounded-lg border-2 overflow-hidden h-min" >
+            <Image src="/nickback.png" className="object-cover" alt="nick pic" width={1000} height={1000} />
+          </div>
+          <div className="rounded-lg border-2 overflow-hidden h-min">
+            <Image src="/jazmin_britt.png" className="object-cover" alt="jaz&britt pic" width={1000} height={1000} />
+          </div>
+          <div className="rounded-lg border-2 overflow-hidden h-min" >         
+          <Image src="/matt_jaymo.png" className="object-cover" alt="matt&mo pic" width={1000} height={1000} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }

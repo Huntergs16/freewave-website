@@ -11,7 +11,7 @@ export default function Footer() {
                     <Image src={"/instagram-icon.png"} width={25} height={25}/>
                 </a>
             </div>
-            <hr className="h-[1px] mb-1 w-full border-black border-[1px]" />
+            <hr className="h-[1px] mb-1 w-[97%] border-opacity-50 border-black border-[1px]" />
             <p className="font-mono text-base text-center"> ©2023 Freewave</p>
         </div>
     )

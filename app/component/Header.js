@@ -1,14 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
     return (
         <div className="w-full h-min pb-2">
-            <div className="flex h-[10vh] min-h-[60px] justify-center">
-                {/* <img src="/fwa1_nobg.png" alt="FWA logo" className="object-cover pointer-events-none"/> */}
-                <div className="relative w-20">
-                    <Image quality={25} fill src={"/fwa1_nobg.png"} className="" alt="Freewave Logo"/>
-                </div>
-            </div>
             <div className="w-full h-min">
                 <div className="relative w-screen h-full">
                     <Image 
@@ -21,10 +16,10 @@ export default function Header() {
                         useMap="#image-map" 
                         />
                     <map name="image-map" className="z-30">
-                        <area className="z-50 block absolute top-[8%] left-[50%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/matthewperaltaa?igshid=YmMyMTA2M2Y=" alt="Matt's Link" style={{ touchAction: 'manipulation' }} />
-                        <area className="z-50 block absolute top-[13%] left-[36%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/fwmjaymo?igshid=YmMyMTA2M2Y=" alt="Jaymos's Link" style={{ touchAction: 'manipulation' }}/>
-                        <area className="z-50 block absolute top-[45%] left-[22%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/__jaazminn26?igshid=YmMyMTA2M2Y=" alt="Jazmin's Link" style={{ touchAction: 'manipulation' }}/>
-                        <area className="z-50 block absolute top-[46%] left-[62%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/tattooprincessbritt?igshid=YmMyMTA2M2Y=" alt="Brittany's Link" style={{ touchAction: 'manipulation' }}/>
+                        <area className="z-40 block absolute top-[8%] left-[50%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/matthewperaltaa?igshid=YmMyMTA2M2Y=" alt="Matt's Link" style={{ touchAction: 'manipulation' }} />
+                        <area className="z-40 block absolute top-[13%] left-[36%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/fwmjaymo?igshid=YmMyMTA2M2Y=" alt="Jaymos's Link" style={{ touchAction: 'manipulation' }}/>
+                        <area className="z-40 block absolute top-[45%] left-[22%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/__jaazminn26?igshid=YmMyMTA2M2Y=" alt="Jazmin's Link" style={{ touchAction: 'manipulation' }}/>
+                        <area className="z-40 block absolute top-[46%] left-[62%] w-[13%] h-[17%] sm:opacity-10 md:opacity-0 lg:opacity-0 hover:opacity-30 focus:opacity-30 active:opacity-60 cursor-pointer bg-white opacity-0 rounded-lg" href="https://instagram.com/tattooprincessbritt?igshid=YmMyMTA2M2Y=" alt="Brittany's Link" style={{ touchAction: 'manipulation' }}/>
                     </map>
                 </div>
             </div>
