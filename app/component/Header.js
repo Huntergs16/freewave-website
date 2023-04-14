@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <div className="w-full h-min pb-2">
+        <div className="w-full h-min mb-6">
             <div className="w-full h-min">
                 <div className="relative w-screen h-full">
                     <Image 

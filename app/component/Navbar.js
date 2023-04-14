@@ -1,10 +1,32 @@
-"use client";
+'use client';
 import Link from "next/link"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import ShoppingCart from "./ShoppingCart";
 
 export default function Navbar() {
     const [menuShow, setMenuShow] = useState(false);
+
+    // useEffect(() => {
+    //     if (typeof window !== 'undefined') {
+    //         window.addEventListener("resize", handleResize);
+    //         window.addEventListener("orientationchange", handleOrientation);
+
+    //         return (()=>{
+    //             window.removeEventListener("resize", handleResize);
+    //             window.removeEventListener("orientationchange", handleOrientation);
+    //         })
+    // }}, []);
+
+    // const handleResize = () => {
+    //     if (window.innerWidth > 768){
+    //         setMenuShow(false);
+    //     }
+    // }
+    
+    // const handleOrientation = () => {
+    //     setMenuShow(false);
+    // }
 
     return (
         <>
@@ -37,9 +59,7 @@ export default function Navbar() {
                         </Link>
                     </div>
                 </div>
-                <button name="shopping-cart" className="ml-auto w-max">
-                    <Image src={"/shopping-cart-icon.png"} width={30} height={30} alt="cart"/>
-                </button>
+                <ShoppingCart />
             </div>
             )
             }
@@ -49,7 +69,7 @@ export default function Navbar() {
 
 export function DropdownMenu({menuShow, setMenuShow}) {
     return (
-        <div className="flex flex-col items-center bg-gradient-to-t from-blue-500 to-blue-200 justify-center gap-10 w-screen h-screen fixed z-50 bg-violet-400 p-10">
+        <div className="flex flex-col items-center bg-gradient-to-t from-blue-500 to-blue-200 justify-center gap-10 w-screen h-screen fixed z-50 bg-violet-400 p-10 pb-40">
             <button className="flex-grow-0 flex-['2 2 0%'] mr-auto text-4xl" onClick={(() => setMenuShow(!menuShow))}>X</button>
             <div className="flex-grow flex flex-col justify-center gap-10 items-center">
                 <Link className="hover:underline text-4xl" onClick={(() => setMenuShow(!menuShow))} href="/" >Home</Link>
