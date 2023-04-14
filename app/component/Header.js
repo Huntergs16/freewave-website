@@ -10,6 +10,7 @@ export default function Header() {
                         quality={100}
                         src="/FW_header.png"
                         alt="Photoshoot"
+                        loading="eager"
                         width={1200} // adjust the width of the image to fit your screen
                         height={800} // adjust the height of the image to fit your screen
                         className="w-full h-full object-cover object-center pointer-events-none" 
